@@ -6,8 +6,8 @@ namespace KNP__Piskvorky__Sibenice
     {
         static void Main(string[] args)
         {
-            bool Running = true;
-            while (Running == true)
+            int Running = (1);
+            while (Running == 1)
             {
                 //VYBER POCITACE
                 Random random = new Random();
@@ -78,13 +78,13 @@ namespace KNP__Piskvorky__Sibenice
                 }
                 Console.WriteLine("Přejete si hrát znovu? (Y/N)");
                 string HratZnovu = Console.ReadLine();
-                if (HratZnovu == "Y")
+                if (HratZnovu == "Y" || HratZnovu == "y")
                 {
-                    Running = true;
+                    Running = 1;
                 }
-                if (HratZnovu == "N")
+                if (HratZnovu == "N" || HratZnovu == "n")
                 {
-                    Running = false;
+                    Running = 0;
                 }
 
             }
