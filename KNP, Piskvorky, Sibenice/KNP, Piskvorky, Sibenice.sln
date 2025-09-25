@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KNP, Piskvorky, Sibenice", "KNP, Piskvorky, Sibenice\KNP, Piskvorky, Sibenice.csproj", "{C27555F9-9609-4FFA-A16B-4F644B20D7DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piškvorky", "Piškvorky\Piškvorky.csproj", "{F100EB0A-F4E9-4E30-98E5-9D4E10F4CDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "šibenica", "šibenica\šibenica.csproj", "{0C06254F-677F-4EA1-9B2B-774D28F3DA17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C27555F9-9609-4FFA-A16B-4F644B20D7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C27555F9-9609-4FFA-A16B-4F644B20D7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C27555F9-9609-4FFA-A16B-4F644B20D7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F100EB0A-F4E9-4E30-98E5-9D4E10F4CDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F100EB0A-F4E9-4E30-98E5-9D4E10F4CDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F100EB0A-F4E9-4E30-98E5-9D4E10F4CDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F100EB0A-F4E9-4E30-98E5-9D4E10F4CDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
