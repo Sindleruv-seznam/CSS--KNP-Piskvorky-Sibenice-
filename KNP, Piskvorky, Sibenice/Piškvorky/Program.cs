@@ -59,11 +59,14 @@ namespace Piškvorky
         static void PrintBoard(string[] board)
         {
             Console.WriteLine();
-            Console.WriteLine($" {board[0]} | {board[1]} | {board[2]} ");
-            Console.WriteLine("---+---+---");
-            Console.WriteLine($" {board[3]} | {board[4]} | {board[5]} ");
-            Console.WriteLine("---+---+---");
-            Console.WriteLine($" {board[6]} | {board[7]} | {board[8]} ");
+            for (int i = 0; i < 9; i += 3)
+            {
+                string a = board[i] == " " ? (i + 1).ToString() : board[i];
+                string b = board[i + 1] == " " ? (i + 2).ToString() : board[i + 1];
+                string c = board[i + 2] == " " ? (i + 3).ToString() : board[i + 2];
+                Console.WriteLine($" {a} | {b} | {c} ");
+                if (i < 6) Console.WriteLine("---+---+---");
+            }
             Console.WriteLine();
         }
 
