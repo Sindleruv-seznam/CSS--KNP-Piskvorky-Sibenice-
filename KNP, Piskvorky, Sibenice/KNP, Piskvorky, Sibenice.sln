@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piškvorky", "Piškvorky\Pi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "šibenica", "šibenica\šibenica.csproj", "{0C06254F-677F-4EA1-9B2B-774D28F3DA17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplayer", "Multiplayer\Multiplayer.csproj", "{188C1143-9745-4B27-A497-8387077ECA2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C06254F-677F-4EA1-9B2B-774D28F3DA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188C1143-9745-4B27-A497-8387077ECA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188C1143-9745-4B27-A497-8387077ECA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188C1143-9745-4B27-A497-8387077ECA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188C1143-9745-4B27-A497-8387077ECA2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
