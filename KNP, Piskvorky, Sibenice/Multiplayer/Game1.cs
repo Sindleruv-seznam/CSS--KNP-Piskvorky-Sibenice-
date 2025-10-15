@@ -8,6 +8,8 @@ namespace Multiplayer
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Texture2D _pixel;
+        private Vector2 _pos = new(100, 100);
 
         public Game1()
         {
@@ -16,18 +18,11 @@ namespace Multiplayer
             IsMouseVisible = true;
         }
 
-        protected override void Initialize()
-        {
-            // TODO: Add your initialization logic here
-
-            base.Initialize();
-        }
-
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
+            _pixel = new Texture2D(GraphicsDevice, 1, 1);
+            _pixel.SetData(new[] { Color.White });
         }
 
         protected override void Update(GameTime gameTime)
@@ -35,7 +30,11 @@ namespace Multiplayer
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            var k = Keyboard.GetState();
+            if (k.IsKeyDown(Keys.W)) _pos.Y -= 3;
+            if (k.IsKeyDown(Keys.S)) _pos.Y += 3;
+            if (k.IsKeyDown(Keys.A)) _pos.X -= 3;
+            if (k.IsKeyDown(Keys.D)) _pos.X += 3;
 
             base.Update(gameTime);
         }
@@ -43,9 +42,9 @@ namespace Multiplayer
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            // TODO: Add your drawing code here
-
+            _spriteBatch.Begin();
+            _spriteBatch.Draw(_pixel, new Rectangle((int)_pos.X, (int)_pos.Y, 50, 50), Color.Red);
+            _spriteBatch.End();
             base.Draw(gameTime);
         }
     }
